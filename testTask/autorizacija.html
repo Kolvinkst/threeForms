@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Авторизация</title>
+</head>
+<body>
+	<form enctype="multipart/form-data" action="authorization.php" method="POST" name="autorizacija">
+		<table>
+			<tr>
+				<td><strong>Логин или телефон:</strong></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="logOrTel" required></td>
+			</tr>
+			<tr>
+				<td><strong>Пароль:</strong></td>
+			</tr>
+			<tr>
+				<td><input type="password" name="passw" required id="pass1"></td>
+			</tr>
+			<tr>
+                <td><input type="submit" name="formSubmit" id="btn" value="Войти"></td>
+            </tr>
+			</table>
+		</form>
+</body>
+</html>

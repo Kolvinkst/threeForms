@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Аккаунт</title>
+</head>
+<body>
+	<p>Поздравляем! Вы в своём аккаунте!</p>
+	<p>Вы можете изменить свои данные, если желаете:</p>
+		<form enctype="multipart/form-data" action="changeData.php" method="POST" name="change">
+		<table>
+			<tr>
+				<td><strong>Новое имя:</strong></td>
+			</tr>
+			<tr>
+				<td><input type="text" name="newName" required></td>
+			</tr>
+			<tr>
+				<td><strong>Новый телефон:</strong></td>
+			</tr>
+			<tr>
+				<td><input type="tel" name="newMobitel" required></td>
+			</tr>
+			<tr>
+				<td><strong>Новая почта:</strong></td>
+			</tr>
+			<tr>
+				<td><input type="email" name="newPoshta" required></td>
+			</tr>
+			<tr>
+				<td><strong>Старый пароль (обязательно!):</strong></td>
+			</tr>
+			<tr>
+				<td><input type="password" name="oldPassw" required id="pass1"></td>
+			</tr>
+			<tr>
+				<td><strong>Новый пароль:</strong></td>
+			</tr>
+			<tr>
+				<td><input type="password" name="newPassw" required id="pass2"></td>
+			</tr>
+			<tr>
+				<td><strong>Повтор нового пароля:</strong></td>
+			</tr>
+			<tr>
+				<td><input type="password" name="repNewPassw" required id="pass2"></td>
+			</tr>
+            <tr>
+                <td><input type="submit" name="formSubmit" id="btn"></td>
+            </tr>
+		</table>
+	</form>
+</body>
+</html>
