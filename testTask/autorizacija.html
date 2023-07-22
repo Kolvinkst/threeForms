@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Авторизация</title>
+	<script src="https://smartcaptcha.yandexcloud.net/captcha.js" defer></script>
 </head>
 <body>
 	<form enctype="multipart/form-data" action="authorization.php" method="POST" name="autorizacija">
@@ -25,5 +26,23 @@
             </tr>
 			</table>
 		</form>
+		<div
+  style="height: 100px"
+  id="captcha-container"
+  class="smart-captcha"
+  data-sitekey="ysc1_6EuBLr9NVY9MUnB9wXxlqGDTymM7NRs40UXonWL09967f082"
+></div>
+<script>
+    function onloadFunction() {
+    if (window.smartCaptcha) {
+        const container = document.getElementById('captcha-container');
+
+        const widgetId = window.smartCaptcha.render(container, {
+            sitekey: 'ysc1_6EuBLr9NVY9MUnB9wXxlqGDTymM7NRs40UXonWL09967f082',
+            hl: 'ru',
+        });
+    }
+    }
+</script>
 </body>
 </html>
